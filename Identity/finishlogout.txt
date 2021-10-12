@@ -1,0 +1,175 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:s="http://jboss.org/schema/seam/taglib" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html" template="/WEB-INF/incl/layout/fullWidthEmpty.xhtml">
+    <ui:define name="head">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <!--[if IE]>
+          <link rel="stylesheet" href="http://www.usg.edu/apache-read-only/global/css/initiative.css"></link>
+        <![endif]-->
+        <!--[if !IE]> -->
+        <link rel="stylesheet" href="https://www.usg.edu/apache-read-only/global/css/initiative.min.css"></link>
+        <link rel="stylesheet" href="/oxauth/ext/resources/usg.edu.css/app.css"></link>
+        <!--<![endif]-->
+    </ui:define>
+
+    <ui:define name="pageTitle">
+        <h:outputText value="BOR USG IDP LOGOUT" />
+    </ui:define>
+
+    <ui:define name="body">
+        <header role="banner">
+            <!--
+          I need /var/www/htdocs/assets/ee_templates/usg-v4/includes.group/v5-initiative-top-header.html to start here.
+          http://www.usg.edu/assets/ee_templates/usg-v4/includes.group/v5-initiative-top-header.html
+          -->
+            <div class="usg title-bar">
+                <a href="http://www.usg.edu">
+                    <h1 class="hide-for-large"><img src="https://www.usg.edu/assets/global/images/bor_logos/bor_logo.svg"></img></h1>
+                    <h1 class="show-for-large">UNIVERSITY SYSTEM OF GEORGIA</h1>
+                </a>
+                <div class="title-bar-right">
+                    <ul class="social_icons">
+                        <li><a href="https://twitter.com/BORUSG"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li><a href="https://www.facebook.com/BORUSG"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/board-of-regents-of-the-university-system-of-georgia"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                    </ul>
+                    <a class="small button" href="#" data-toggle="sites_a-z" aria-controls="sites_a-z" aria-haspopup="true" tabindex="0">SITES A-Z</a>
+                </div>
+            </div>
+            <!--
+        And to end here.
+        -->
+        </header>
+        <div class="row">
+            <div class="small-12 medium-6 medium-centered columns">
+                <div class="callout logout-page">
+                    <p>LOGGED OUT</p>
+                    <p>You have been logged out of your current session.</p>
+                </div>
+            </div>
+        </div>
+        <!--
+        I need /var/www/htdocs/assets/ee_templates/usg-v4/includes.group/v5-initiative-footer.html to start here.
+        http://www.usg.edu/assets/ee_templates/usg-v4/includes.group/v5-initiative-footer.html
+        -->
+        <footer>
+            <div class="row">
+                <div id="copyright" class="small-12 text-center columns">
+                    <img src="https://www.usg.edu/assets/global/images/bor_logos/bor_logo_footer.svg" alt="University System of Georgia Logo"></img>
+                    <br />
+                    &copy; Copyright <span></span>. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+        <!--
+        And end here.
+        -->
+
+        <!--
+        I need /var/www/htdocs/assets/ee_templates/usg-v4/modules.group/sites-list.html to start here.
+        http://www.usg.edu/assets/ee_templates/usg-v4/modules.group/sites-list.html
+        -->
+        <div class="large reveal" id="sites_a-z" data-reveal="">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h3 class="text-center">USG SITES A-Z</h3>
+                    <ul class="usg-sites">
+                      <li><a href="http://www.usg.edu/15tofinish/">15 to Finish</a></li>
+                      <li><a href="http://www.usg.edu/academic_affairs_and_policy/">Academic Affairs and Policy</a></li>
+                      <li><a href="http://www.usg.edu/academic_affairs_handbook/">Academic &amp; Student Affairs Handbook</a></li>
+                      <li><a href="http://www.usg.edu/divisions/academic_common_market/">Academic Common Market</a></li>
+                      <li><a href="http://www.usg.edu/academic_partnerships_accreditation/">Academic Parterships &amp; Accreditation</a></li>
+                      <li><a href="http://www.usg.edu/academic_programs/">Academic Programs</a></li>
+                      <li><a target="_blank" href="http://www.affordablelearninggeorgia.org">Affordable Learning Georgia</a></li>
+                      <li><a href="http://www.usg.edu/aami/">African-American Male Initiative</a></li>
+                      <li><a href="http://www.usg.edu/regents/">Board of Regents</a></li>
+                      <li><a href="http://www.usg.edu/policymanual">Board of Regents Policy Manual</a></li>
+                      <li><a href="http://www.usg.edu/business_procedures_manual/">Business Procedures Manual</a></li>
+                      <li><a href="http://www.usg.edu/consolidation/">Campus Consolidations</a></li>
+                      <li><a href="http://www.usg.edu/leadership_excellence/">Center for Leadership Excellence</a></li>
+                      <li><a href="http://www.usg.edu/chancellor/">Chancellor"s Office</a></li>
+                      <li><a href="http://www.usg.edu/busdev/">Community Relations</a></li>
+                      <!--<li><a href="http://core.usg.edu">Core Curriculum</a></li>-->
+                      <li><a href="http://www.usg.edu/adminreview/">Comprehensive Administrative Review</a></li>
+                      <li><a href="http://www.usg.edu/cybersecurity">Cybersecurity</a></li>
+                      <li><a href="http://www.usg.edu/data_services/">Data Services</a></li>
+                      <li><a href="http://www.usg.edu/economic_development/">Economic Development</a></li>
+                      <li><a href="http://www.usg.edu/faculty_affairs/">Faculty Affairs</a></li>
+                      <li><a href="http://www.usg.edu/faculty_council/">Faculty Council</a></li>
+                      <li><a href="http://www.usg.edu/facultydevelopment/">Faculty Development</a></li>
+                      <li><a href="http://www.usg.edu/fiscal_affairs/">Fiscal Affairs</a></li>
+                      <li><a target="_blank" href="http://www.gatracs.org">GAtracs</a></li>
+                      <li><a target="_blank" href="http://www.georgiaarchives.org">Georgia Archives</a></li>
+                      <li><a target="_blank" href="http://www.georgiafilmacademy.org">Georgia Film Academy</a></li>
+                      <li><a href="http://www.usg.edu/georgia_best/">GeorgiaBEST</a></li>
+                      <li><a href="http://www.usg.edu/gafirst-fin/">GeorgiaFIRST</a></li>
+                      <li><a href="http://www.gae-rate.usg.edu">Georgia E-rate Services</a></li>
+                      <li><a target="_blank" href="http://www.georgiaonmyline.org">Georgia ONmyLINE</a></li>
+                      <li><a target="_blank" href="http://www.usg.edu/georgiaview/">GeorgiaVIEW</a></li>
+                      <li><a target="_blank" href="http://www.webmbaonline.org">Georgia WebMBA</a></li>
+                      <li><a href="http://www.usg.edu/galileo/gil/conference">GIL Users Group Meeting</a></li>
+                      <li><a href="http://www.usg.edu/government/">Government Relations</a></li>
+                      <li><a href="http://www.usg.edu/hr/">Human Resources</a></li>
+                      <li><a href="http://www.usg.edu/information_officers_council/">Information Officers Council</a></li>
+                      <li><a href="http://www.usg.edu/information_technology_services/it_handbook/">Information Technology Handbook</a></li>
+                      <li><a href="http://www.usg.edu/its/">Information Technology Services</a></li>
+                      <li><a href="http://www.usg.edu/institutions/">Institutions</a></li>
+                      <li><a href="http://www.usg.edu/audit/">Internal Audit</a></li>
+                      <li><a href="http://www.usg.edu/international_education/">International Education</a></li>
+                      <li><a href="http://www.usg.edu/customer_services/">ITS Customer Services</a></li>
+                      <!--li><a href="http://www.usg.edu/learning_management_system/">Learning Management System</a></li-->
+                      <li><a href="http://www.usg.edu/legal/">Legal Affairs</a></li>
+                      <li><a href="http://www.usg.edu/news/">Newsroom</a></li>
+                      <li><a href="http://www.usg.edu/organizational_effectiveness/">Organizational Effectiveness</a></li>
+                      <li><a href="http://www.usg.edu/peachnet/">PeachNet</a></li>
+                      <li><a href="http://www.usg.edu/policies/">Policies and Reports</a></li>
+                      <li><a href="http://www.usg.edu/facilities/">Real Estate and Facilities</a></li>
+                      <li><a href="http://www.usg.edu/records_management/">Records Management</a></li>
+                      <li><a href="http://www.usg.edu/research/">Research and Policy Analysis</a></li>
+                      <li><a href="http://www.usg.edu/safetysecurity/">Safety and Security</a></li>
+                      <li><a href="http://www.usg.edu/service_excellence/">Service Excellence</a></li>
+                      <li><a href="http://www.usg.edu/staff_council">Staff Council</a></li>
+                      <li><a href="http://www.usg.edu/student_affairs">Student Affairs</a></li>
+                      <li><a href="http://www.usg.edu/tobaccofree/">Tobacco Free</a></li>
+                      <li><a href="http://www.usg.edu/">University System of Georgia</a></li>
+                      <li><a target="_blank" href="http://www.usg.edu/diversity_summit">USG Diversity Summit</a></li>
+                      <li><a target="_blank" href="http://oneusgconnect.usg.edu/">USG Faculty and Staff Portal</a></li>
+                      <li><a target="_blank" href="http://www.usgfoundation.org">USG Foundation</a></li>
+                      <li><a href="http://status.usg.edu">USG Services Status</a></li>
+                      <li><a href="http://techstore.usg.edu">USG Technology Store</a></li>
+                      <li><a href="http://www.usg.edu/veteran_to_nurse_educator_fellowship/">Veteran to Nurse Educator Fellowship</a></li>
+                      <li><a href="http://www.usg.edu/visual_identity/">Visual Identity Standards</a></li>
+                      <li><a href="http://www.usg.edu/well-being/">Well-being</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="close-button" data-close="" aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!--
+      And end here.
+      -->
+
+        <script src="https://www.usg.edu/apache-read-only/global/js/zf6core.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                var userNameField = document.getElementById("loginForm:username");
+                if (userNameField != null) {
+                    userNameField.focus();
+                }
+
+                var displayRegister = #{display_register_action or sessionAttributes['display_register_action']};
+                if (displayRegister) {
+                    var registerButton = document.getElementById("loginForm:registerId");
+                    if (registerButton != null) {
+                        registerButton.style.display = 'inline';
+                    }
+                }
+                var d = new Date();
+                document.getElementById('copyright').getElementsByTagName('span')[0].innerHTML = d.getFullYear();
+            };
+        </script>
+    </ui:define>
+</ui:composition>
