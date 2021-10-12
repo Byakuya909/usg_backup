@@ -1,0 +1,333 @@
+<%--         PATH => /opt/gluu-server-3.1.7/opt/gluu/jetty/asimba/webapps/asimba/ui/sso/authn  
+*
+* Asimba Server
+*
+* Copyright (C) 2013 Asimba
+* Copyright (C) 2007-2008 Alfa & Ariss B.V.
+*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU Affero General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU Affero General Public License for more details.
+*
+* You should have received a copy of the GNU Affero General Public License
+* along with this program.  If not, see www.gnu.org/licenses
+*
+* To contact Alfa & Ariss B.V., see www.alfa-ariss.com
+*
+--%>
+<%@ page contentType="text/html; charset=UTF-8"
+         language="java" isELIgnored ="false"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+          "http://www.w3.org/TR/html4/loose.dtd">
+<c:if test="${requestScope.sessionLocale != null}">
+    <fmt:setLocale value="${requestScope.sessionLocale}"/>
+</c:if>
+<fmt:setBundle
+    basename="com.alfaariss.oa.authentication.remote.saml2.resources.errors"
+              var="errors" scope="request"/>
+<fmt:setBundle
+    basename="com.alfaariss.oa.authentication.remote.saml2.resources.warnings"
+              var="warnings" scope="request"/>
+<fmt:setBundle
+    basename="com.alfaariss.oa.authentication.remote.saml2.resources.messages"
+              var="messages" scope="request"/>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/helpers/stylesheet/default.css?asid=${requestScope.asid}" type="text/css">
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/etc/img/logo.ico"  type="image/x-icon">
+        <link rel="stylesheet" href="https://www.usg.edu/apache-read-only/global/css/initiative.min.css">
+        <link rel="stylesheet" href="/oxauth/ext/resources/usg.edu.css/app.css">
+        <title>
+            <fmt:message bundle="${messages}" key="saml2_page_title">
+                <fmt:param>
+                    <c:out value="${requestScope.serverInfo.organization.friendlyName}"/>
+                </fmt:param>
+                <fmt:param>
+                    <c:out value="${requestScope.methodFriendlyName}"/>
+                </fmt:param>
+            </fmt:message>
+        </title>
+    </head>
+    <body>
+        <header role="banner">
+            <!--
+                 I need /var/www/htdocs/assets/ee_templates/usg-v4/includes.group/v5-initiative-top-header.html to start here.
+                 http://www.usg.edu/assets/ee_templates/usg-v4/includes.group/v5-initiative-top-header.html
+            -->
+            <div class="usg title-bar">
+                <a href="http://www.usg.edu">
+                    <h1 class="hide-for-large"><img src="https://www.usg.edu/assets/global/images/bor_logos/bor_logo.svg"></h1>
+                    <h1 class="show-for-large">UNIVERSITY SYSTEM OF GEORGIA</h1>
+                </a>
+                <div class="title-bar-right">
+                    <ul class="social_icons">
+                        <li><a href="https://twitter.com/BORUSG"><i class="fab fa-twitter fa-lg"></i></a></li>
+                        <li><a href="https://www.facebook.com/BORUSG"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/board-of-regents-of-the-university-system-of-georgia"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                    </ul>
+                    <a class="small button" href="#" data-toggle="sites_a-z" aria-controls="sites_a-z" aria-haspopup="true" tabindex="0">SITES A-Z</a>
+                </div>
+            </div>
+            <!--
+                 And to end here.
+            -->
+        </header>
+        <div class="row">
+            <div class="small-12 columns">
+                <h2><c:out value="${requestScope.methodFriendlyName}" /></h2>
+                <c:if test="${requestScope.userEvent != null}">
+                    <div id="contentError" class="warning">
+                        <ul>
+                            <li><fmt:message bundle="${errors}" key="${requestScope.userEvent}"/></li>
+                        </ul>
+                    </div>
+                </c:if>
+                <div id="sso-cookie-checkbox" class="callout warning">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <label>
+                                <input id="sso-rememberme-checkbox" type="checkbox" style="margin: 0 0.5rem 0 0;">Remember my choice.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <c:if test="${requestScope.details != null && fn:length(requestScope.details) > 0}">
+                    <div id="contentWarning" class="warning">
+                        <ul>
+                            <c:forEach items="${requestScope.details}" var="warning">
+                                <li><fmt:message bundle="${warnings}" key="${warning}" /></li>
+                            </c:forEach>
+                        </ul>
+                    </div>
+                </c:if>
+                <form id="SamlSelectForm" class="oaForm imageSelection" action="${pageContext.request.contextPath}/sso/web" method="post" name="select">
+                    <input type="hidden" name="asid" value="${requestScope.asid}">
+                    <fieldset>
+                        <legend><fmt:message bundle="${messages}" key="organization_id_message"/></legend>
+                        <fmt:message var="imageRemote" bundle="${messages}" key="image_remote" />
+                        <div class="callout selector">
+                            <div class="callout">
+                                <div class="row small-up-2 medium-up-5 large-up-7" data-equalizer data-equalize-on="medium">
+                                    <c:forEach var="req" items="${requestScope.organizations}">
+                                        <div id="<%= ((com.alfaariss.oa.util.saml2.idp.SAML2IDP)pageContext.getAttribute("req")).getID().toString().replaceAll("\\W+", "_") %>" class="column">
+                                            <div class="inner-wrap" data-equalizer-watch>
+                                                <div class="alignMe">
+                                                    <a href='${pageContext.request.contextPath}/sso/web?asid=${requestScope.asid}&amp;saml_organization_id=<c:out value="${req.ID}"/>'><img src='${pageContext.request.contextPath}/static/images/image_<%= ((com.alfaariss.oa.util.saml2.idp.SAML2IDP)pageContext.getAttribute("req")).getID().toString().replaceAll("\\W+", "_") %>.svg' alt="" class="<%= ((com.alfaariss.oa.util.saml2.idp.SAML2IDP)pageContext.getAttribute("req")).getID().toString().replaceAll("\\W+", "_") %>"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </c:forEach>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div> <!-- close columns -->
+        </div> <!-- close row -->
+
+        <!--
+             I need /var/www/htdocs/assets/ee_templates/usg-v4/includes.group/v5-initiative-footer.html to start here.
+             http://www.usg.edu/assets/ee_templates/usg-v4/includes.group/v5-initiative-footer.html
+        -->
+        <footer>
+            <div class="row">
+                <div class="small-12 text-center columns">
+                    <img src="https://www.usg.edu/assets/global/images/bor_logos/bor_logo_footer.svg" alt="University System of Georgia Logo"></img>
+                    <br />
+                    <jsp:useBean id="now" class="java.util.Date" />
+                    &copy; Copyright <fmt:formatDate pattern = "yyyy" value = "${now}" />. All Rights Reserved.
+                </div>
+            </div>
+        </footer>
+        <!--
+             And end here.
+        -->
+
+        <!--
+             I need /var/www/htdocs/assets/ee_templates/usg-v4/modules.group/sites-list.html to start here.
+             http://www.usg.edu/assets/ee_templates/usg-v4/modules.group/sites-list.html
+        -->
+        <div class="large reveal" id="sites_a-z" data-reveal="">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h3 class="text-center">USG SITES A-Z</h3>
+                    <ul class="usg-sites">
+                        <li><a href='http://www.usg.edu/15tofinish/'>15 to Finish</a></li>
+                        <li><a href='http://www.usg.edu/academic_affairs_handbook/'>Academic &amp; Student Affairs Handbook</a></li>
+                        <li><a href='http://www.usg.edu/divisions/academic_common_market/'>Academic Common Market</a></li>
+                        <li><a href='http://www.usg.edu/academic_partnerships_accreditation/'>Academic Parnterships &amp; Accreditation</a></li>
+                        <li><a href='http://www.usg.edu/academic_programs/'>Academic Programs</a></li>
+                        <li><a target="_blank" href='http://www.affordablelearninggeorgia.org'>Affordable Learning Georgia</a></li>
+                        <li><a href='http://www.usg.edu/aami/'>African-American Male Initiative</a></li>
+                        <li><a href='http://www.usg.edu/regents/'>Board of Regents</a></li>
+                        <li><a href='http://www.usg.edu/policymanual'>Board of Regents Policy Manual</a></li>
+                        <li><a href='http://www.usg.edu/busdev/'>Business Development</a></li>
+                        <li><a href='http://www.usg.edu/business_procedures_manual/'>Business Procedures Manual</a></li>
+                        <li><a href='http://www.usg.edu/consolidation/'>Campus Consolidations</a></li>
+                        <li><a href='http://www.usg.edu/leadership_excellence/'>Center for Leadership Excellence</a></li>
+                        <li><a href='http://www.usg.edu/chancellor/'>Chancellor's Office</a></li>
+                        <li><a href='http://core.usg.edu'>Core Curriculum</a></li>
+                        <li><a href='http://www.usg.edu/economic_development/'>Economic Development</a></li>
+                        <li><a href='http://www.usg.edu/educational_access/'>Educational Access and Success</a></li>
+                        <li><a href='http://www.usg.edu/faculty_affairs/'>Faculty Affairs</a></li>
+                        <li><a href='http://www.usg.edu/faculty_council/'>Faculty Council</a></li>
+                        <li><a href='http://www.usg.edu/facultydevelopment/'>Faculty Development</a></li>
+                        <li><a href='http://www.usg.edu/fiscal_affairs/'>Fiscal Affairs</a></li>
+                        <li><a target="_blank" href='http://www.gatracs.org'>GAtracs</a></li>
+                        <li><a target="_blank" href='http://www.georgiaarchives.org'>Georgia Archives</a></li>
+                        <li><a href='http://www.usg.edu/apply-to-college/'>Georgia Apply to College</a></li>
+                        <li><a target="_blank" href='http://www.georgiafilmacademy.org'>Georgia Film Academy</a></li>
+                        <li><a href='http://www.usg.edu/georgia_institutional_intelligence/'>Georgia Institutional Intelligence</a></li>
+                        <li><a href='http://www.usg.edu/georgia_best/'>GeorgiaBEST</a></li>
+                        <li><a href='http://www.usg.edu/gafirst-fin/'>GeorgiaFIRST</a></li>
+                        <li><a target="_blank" href='http://www.georgiaonmyline.org'>Georgia ONmyLINE</a></li>
+                        <li><a target="_blank" href='http://www.usg.edu/information_technology_services/online_learning_options/georgiaview/'>GeorgiaVIEW</a></li>
+                        <li><a target="_blank" href='http://www.webmbaonline.org'>Georgia WebMBA</a></li>
+                        <li><a href='http://www.usg.edu/galileo/gil/conference'>GIL Users Group Meeting</a></li>
+                        <li><a href='http://www.usg.edu/government/'>Government Relations</a></li>
+                        <li><a href='http://www.usg.edu/hr/'>Human Resources</a></li>
+                        <li><a href='http://www.usg.edu/information_officers_council/'>Information Officers Council</a></li>
+                        <li><a href='http://www.usg.edu/infosec'>Information Security and ePrivacy</a></li>
+                        <li><a href='http://www.usg.edu/information_technology_handbook/'>Information Technology Handbook</a></li>
+                        <li><a href='http://www.usg.edu/its/'>Information Technology Services</a></li>
+                        <li><a href='http://www.usg.edu/institutions/'>Institutions</a></li>
+                        <li><a href='http://www.usg.edu/audit/'>Internal Audit and Compliance</a></li>
+                        <li><a href='http://www.usg.edu/international_education/'>International Education</a></li>
+                        <li><a href='http://www.usg.edu/customer_services/'>ITS Customer Services</a></li>
+                        <li><a href='http://www.gae-rate.usg.edu/'>ITS E-rate Services</a></li>
+                        <!--li><a href='http://www.usg.edu/learning_management_system/'>Learning Management System</a></li-->
+                        <li><a href='http://www.usg.edu/legal/'>Legal Affairs</a></li>
+                        <li><a href='http://www.usg.edu/news/'>Newsroom</a></li>
+                        <li><a href='http://www.usg.edu/peachnet/'>PeachNet</a></li>
+                        <li><a href='http://www.usg.edu/policies/'>Policies and Reports</a></li>
+                        <li><a href='http://www.usg.edu/facilities/'>Real Estate and Facilities</a></li>
+                        <li><a href='http://www.usg.edu/records_management/'>Records Management</a></li>
+                        <li><a href='http://www.usg.edu/diversity_summit/'>Regional Diversity Summit</a></li>
+                        <li><a href='http://www.usg.edu/research/'>Research and Policy Analysis</a></li>
+                        <li><a href='http://www.usg.edu/safetysecurity/'>Safety and Security</a></li>
+                        <li><a href='http://www.usg.edu/service_excellence/'>Service Excellence</a></li>
+                        <li><a href='http://www.srs.usg.edu/'>Software Resource Services</a></li>
+                        <li><a href='http://www.usg.edu/staff_council'>Staff Council</a></li>
+                        <li><a href='http://www.usg.edu/student_affairs'>Student Affairs</a></li>
+                        <li><a href='http://www.usg.edu/tobaccofree/'>Tobacco Free</a></li>
+                        <li><a href='http://www.usg.edu/'>University System of Georgia</a></li>
+                        <li><a target="_blank" href='http://www.usgfoundation.org'>USG Foundation</a></li>
+                        <li><a href='http://status.usg.edu/'>USG Services Status</a></li>
+                        <li><a href='http://www.usg.edu/veteran_to_nurse_educator_fellowship/'>Veteran to Nurse Educator Fellowship</a></li>
+                        <li><a href='http://www.usg.edu/wellness/'>Wellness</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="close-button" data-close="" aria-label="Close reveal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!--
+             And end here.
+        -->
+        <div class="footer">
+            <c:out value="${requestScope.serverInfo.friendlyName}"/> (<c:out value="${requestScope.serverInfo.ID}"/>)
+            <a href="http://www.gluu.org">Gluu Asimba</a> - Serious Open Source SSO
+            <!---
+                 F5 listens for this SVG's HTTP call to trigger peoplesoft cookie deletion
+               --->
+            <img style="display: none;" src="/delete_crusty_usg_edu_peoplesoft_cookies.svg">
+        </div>
+        <script src="https://www.usg.edu/apache-read-only/global/js/zf6core.min.js"></script>
+        <script src="https://www.usg.edu/apache-read-only/global/js/js.cookie-2.2.0.min.js"></script>
+        <script type="text/javascript">
+
+         $(document).foundation();
+
+         var usgCookies                          = Cookies.noConflict(),
+             ssoRemoteIdpGlobal = '',
+             ssoCookies                          = {
+                 redirectUser: function(href) {
+                     window.location.replace(href);
+                 },
+                 check: function() {
+                     var self                                   = this,
+                         ssoRemoteIdp   = usgCookies.get('sso-remoteidp'),      // perm cookie
+                         ssoRememberMe  = usgCookies.get('sso-rememberme');     // perm cookie
+
+                     // Set global cookie to use in forceChangeOldCookies function
+                     ssoRemoteIdpGlobal = ssoRemoteIdp;
+
+                     if (typeof ssoRememberMe == 'undefined' || typeof ssoRememberMe == '' || typeof ssoRememberMe == null) {
+                         $('#SamlSelectForm').on('click', 'a', function(e) {
+                             e.preventDefault();
+                             var href = $(this).attr('href'),
+                                 idp  = $('img', this).attr('class');
+
+                             usgCookies.set('sso-remoteidp', idp, {
+                                 expires: 36500,
+                             });
+
+                             if ($('#sso-rememberme-checkbox').is(':checked')) {
+                                 usgCookies.set('sso-rememberme', true, {
+                                     expires: 36500,
+                                 });
+                             }
+
+                             self.redirectUser(href);
+                         });
+                     } else if (ssoRememberMe) {
+                         var currentHref = $('.' + ssoRemoteIdp, '#SamlSelectForm').parent('a').attr('href');
+                         self.redirectUser(currentHref);
+                     }
+                 }
+             },
+             swapSomeLinksByContainerId = {
+                 // I don't trust the href values to stay constant, so I find them by their container div's ID, which is constant
+                 thisToThat: function(oldId, newId) {
+                     var newHref = $('#' + newId).find('a').attr('href');
+                     $('#' + oldId).find('a').attr('href', newHref);
+                 }
+             },
+             forceChangeOldCookies = {
+                 thisToThat: function(oldCookie, newCookie) {
+                     if (ssoRemoteIdpGlobal == oldCookie) {
+                         usgCookies.set('sso-remoteidp', newCookie);
+                     }
+                 }
+             },
+             instMessage = {
+                 highlight: function(idp, msg) {
+                     $('#' + idp, '#SamlSelectForm').find('.alignMe').addClass('callout warning').append('<p class="instMessage">' + msg + '</p>');
+                 }
+             }
+
+         $(document).ready(function() {
+             ssoCookies.check();
+             // temp swap armstrong href value for georgia southern's - USG-INC0034150
+             swapSomeLinksByContainerId.thisToThat('https_idp_alpha_armstrong_edu_idp_shibboleth','https_my_georgiasouthern_edu_saml_saml2_idp_metadata_php');
+             // force KSU cookie reset if old cookie is found - USG-INC0099648
+             forceChangeOldCookies.thisToThat('https_idp_samltest_kennesaw_edu','https_idp_samlprod2_kennesaw_edu');
+             // goodbye ssc hello uso
+             forceChangeOldCookies.thisToThat('http_adfs_ssc_usg_edu_adfs_services_trust','https_idp_dev_usg_edu_idp_shibboleth');
+             // armstrong to georgia southern
+             forceChangeOldCookies.thisToThat('https_my_georgiasouthern_edu_armsaml_saml2_idp_metadata_php','https_my_georgiasouthern_edu_saml_saml2_idp_metadata_php');
+             // old GSU to new GSU IDP (emergency fix) - USG-INC0140655
+             forceChangeOldCookies.thisToThat('https_idp_gsu_edu_idp_shibboleth','https_login_gsu_edu_idp_shibboleth');
+             // old EGA to new EGA IDP - USG-INC0143016
+             forceChangeOldCookies.thisToThat('https_login_ega_edu','https_ega_sso_gabest_usg_edu');
+             // old GSW to new GSW Azure
+             forceChangeOldCookies.thisToThat('http_draft_gsw_edu_adfs_services_trust','https_sts_windows_net_e21eed1c_1f72_4ad4_84ab_a7ae53ab95c2_');
+             // highlight UGA and display message
+             // COMMENTED OUT 12/17/2018 instMessage.highlight('https_idp2f_dev_uga_edu_idp_shibboleth','Benefits Service unavailable until 12/17/2018. Please contact <a href="mailto:oneusgsupport@uga.edu">oneusgsupport</a> for assistance.');
+             // COMMENTED OUT 04/01/2019 instMessage.highlight('https_idp2f_dev_uga_edu_idp_shibboleth','Unavailable March 9, 2019 (8:00am – 11:59pm) due to local UGA maintenance.');
+         });
+        </script>
+    </body>
+</html>
