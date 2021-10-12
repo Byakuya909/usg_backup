@@ -1,0 +1,724 @@
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!196B,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!196B
+oxValidation: {"minLength":null,"maxLength":null,"regexp":""}
+oxMultivaluedAttribute: false
+displayName: axiomnid
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:axiomnid
+gluuSAML1URI: urn:gluu:dir:attribute-def:axiomnid
+gluuAttributeName: axiomnid
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: NameID for Axiom Elite containing Email.
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!98FC,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: birthdate
+gluuAttributeName: birthdate
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!98FC
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/birthdate
+description:: RW5kLVVzZXIncyBiaXJ0aGRheSwgcmVwcmVzZW50ZWQgYXMgYW4gSVNPIDg2MDE6MjAwNCBbSVNPODYwMeKAkTIwMDRdIFlZWVktTU0tREQgZm9ybWF0Lg==
+displayName: Birthdate
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!BCE8,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: country
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!BCE8
+urn: urn:gluu:dir:attribute-def:c
+displayName: Country
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:2.5.4.6
+gluuSAML1URI: urn:urn:mace:dir:attribute-def:c
+gluuAttributeName: c
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+description: Country
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!61DB,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!61DB
+oxMultivaluedAttribute: false
+displayName: customeduPersonPrincipalName
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: eduPersonPrincipalName
+gluuSAML1URI: eduPersonPrincipalName
+gluuAttributeName: customeduPersonPrincipalName
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description:: Y3VzdG9tIGF0dHJpYnV0ZSwgcHVsbGluZyBlUFBOIGRhdGEgaW5zaWRlLiA=
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!2B29,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: name
+gluuAttributeName: displayName
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!2B29
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:mace:dir:attribute-def:displayName
+description: End-User's full name in displayable formincluding all name parts, possibly including titles andsuffixes, ordered according to the End-User's locale and preferences.
+displayName: Display Name
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!096B,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: eduPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!096B
+urn: oid:1.3.6.1.4.1.5923.1.1.1.6
+oxMultivaluedAttribute: false
+displayName: eduPersonPrincipalName
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:1.3.6.1.4.1.5923.1.1.1.6
+gluuSAML1URI: urn:mace:dir:attribute-def:eduPersonPrincipalName
+gluuAttributeName: eduPersonPrincipalName
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: A scoped identifier for a person. It should berepresented in the form "user@scope" where 'user' is aname-based identifier for the person and where 'scope'defines a local security domain. Each value of 'scope' definesa namespace within which the assigned identifiers MUST be unique.Given this rule, if two eduPersonPrincipalName (ePPN) values arethe same at a given point in time, they refer to the same person.
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!002A,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: eduPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!002A
+urn: oid:1.3.6.1.4.1.5923.1.1.1.9
+oxMultivaluedAttribute: true
+displayName: eduPersonScopedAffiliation
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:1.3.6.1.4.1.5923.1.1.1.9
+gluuSAML1URI: urn:mace:dir:attribute-def:eduPersonScopedAffiliation
+gluuAttributeName: eduPersonScopedAffiliation
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Specifies the person's affiliation within a particular security domainin broad categories such as student, faculty, staff, alum, etc. The values consistof a left and right component separated by an "@" sign. The left component is one ofthe values from the eduPersonAffiliation controlled vocabulary.This right-hand side syntaxof eduPersonScopedAffiliation intentionally matches that used for the right-hand sidevalues for eduPersonPrincipalName since both identify a security domain. Multiple "@" signsare not recommended, but in any case, the first occurrence of the "@" sign starting from theleft is to be taken as the delimiter between components. Thus, user identifier is to the left,security domain to the right of the first "@". This parsing rule conforms to the POSIX "greedy"disambiguation method in regular expression processing.
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!CAE3,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: email
+gluuAttributeName: mail
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!CAE3
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:mace:dir:attribute-def:mail
+description: Primary Email Address
+displayName: Email
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!581A,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!581A
+oxValidation: {"minLength":null,"maxLength":null,"regexp":""}
+oxMultivaluedAttribute: false
+displayName: Email Address
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: EmailAddress
+gluuSAML1URI: urn:gluu:dir:attribute-def:AhaEmailAddress
+gluuAttributeName: AhaEmailAddress
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Attribute for Aha!.
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!8F88,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: email_verified
+gluuAttributeName: emailVerified
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!8F88
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/email_verified
+description: True if the End-User's e-mail address has been verified; otherwise false
+displayName: Email Verified
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!6264,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!6264
+oxMultivaluedAttribute: false
+displayName: emailnid
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:emailnid
+gluuSAML1URI: urn:gluu:dir:attribute-def:emailnid
+gluuAttributeName: emailnid
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description:: TmFtZUlEIA==
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!D0C9,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!D0C9
+urn: urn:mace:dir:attribute-def:employeeNumber
+oxMultivaluedAttribute: false
+displayName: Employee Number
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:2.16.840.1.113730.3.1.3
+gluuSAML1URI: urn:mace:dir:attribute-def:employeeNumber
+gluuAttributeName: employeeNumber
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+description: Employee Number
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!9A07,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!9A07
+oxMultivaluedAttribute: false
+displayName: empnumnid
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:empnumnid
+gluuSAML1URI: urn:gluu:dir:attribute-def:empnumnid
+gluuAttributeName: empnumnid
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Nameid based on employee's number (for ServiceNow)
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!5039,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+oxSCIMCustomAttribute: true
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: oxEnrollmentCode
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!5039
+gluuAttributeViewType: admin
+urn: urn:gluu:dir:attribute-def:oxEnrollmentCode
+description: oxEnrollmentCode
+description: Enrollment code, non-reassignable code
+displayName: Enrollment code
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!0FE8,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!0FE8
+oxMultivaluedAttribute: false
+displayName: eppnmid
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:eppnnmid
+gluuSAML1URI: urn:gluu:dir:attribute-def:eppnnmid
+gluuAttributeName: eppnnmid
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Custom nameID based on ePPN attribute
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!B4B0,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: given_name
+gluuAttributeName: givenName
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!B4B0
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:mace:dir:attribute-def:givenName
+description: Given name(s) or first name(s) of the End-User.Note that in some cultures, people can have multiple given names;all can be present, with the names being separated by space characters.
+displayName: First Name
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!3C7A,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!3C7A
+oxMultivaluedAttribute: false
+displayName: fullname
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:fullname
+gluuSAML1URI: urn:gluu:dir:attribute-def:fullname
+gluuAttributeName: fullname
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Custom attribute, pulling 'displayname'
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!3692,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: gender
+gluuAttributeName: gender
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!3692
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/gender
+description: Gender of the person, either male or female
+displayName: Gender, male or female
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!CA0E,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!CA0E
+oxMultivaluedAttribute: false
+displayName: IDPEmail
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: IDPEmail
+gluuSAML1URI: urn:gluu:dir:attribute-def:IDPEmail
+gluuAttributeName: IDPEmail
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Custom attribute for O365 SSO
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!42E1,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: imapdata
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: imap_data
+gluuAttributeName: gluuIMAPData
+gluuAttributeEditType: admin
+gluuAttributeEditType: user
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!42E1
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+urn: urn:mace:dir:attribute-def:gluuIMAPData
+description: IMAP Data
+displayName: IMAP Data
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!8DFD,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!8DFD
+oxMultivaluedAttribute: false
+displayName: ImmutableID
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:ImmutableID
+gluuSAML1URI: urn:gluu:dir:attribute-def:ImmutableID
+gluuAttributeName: ImmutableID
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Custom nameID for O365 SSO
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!5CA2,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: iname
+oxAuthClaimName: iname
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!5CA2
+description: iname
+urn: urn:gluu:dir:attribute-def:iname
+displayName: iname
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!29DA,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: inum
+gluuAttributeName: inum
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!29DA
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:gluu:dir:attribute-def:inum
+description: XRI i-number, persistent non-reassignable identifier
+displayName: Inum
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!79AE,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!79AE
+oxMultivaluedAttribute: true
+displayName: itsadgroup
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:itsadgroup
+gluuSAML1URI: urn:gluu:dir:attribute-def:itsadgroup
+gluuAttributeName: itsadgroup
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Custom attribute, pulling 'memberof'
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!0C85,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: family_name
+gluuAttributeName: sn
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!0C85
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:mace:dir:attribute-def:sn
+description: Last Name
+description: Surname(s) or last name(s) of the End-User. Note that in somecultures, people can have multiple family names or no family name; all canbe present, with the names being separated by space characters.
+displayName: Last Name
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!BE64,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: updated_at
+gluuAttributeName: updatedAt
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!BE64
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/address
+description: Time the End-User's information was last updated. Its value is aJSON number representing the number of seconds from 1970-01-01T0:0:0Z as measured inUTC until the date/time.
+displayName: Last Updated
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!36D9,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: locale
+gluuAttributeName: locale
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!36D9
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/locale
+description:: RW5kLVVzZXIncyBsb2NhbGUsIHJlcHJlc2VudGVkIGFzIGEgQkNQNDcgKFJGQzU2NDYpIGxhbmd1YWdlIHRhZy4gVGhpcyBpcyB0eXBpY2FsbHkgYW5JU08gNjM5LTEgQWxwaGEtMiBbSVNPNjM54oCRMV0gbGFuZ3VhZ2UgY29kZSBpbiBsb3dlcmNhc2UgYW5kIGFuIElTTyAzMTY2LTEgQWxwaGEtMmNvdW50cnkgY29kZSBpbiB1cHBlcmNhc2UsIHNlcGFyYXRlZCBieSBhIGRhc2guIEZvciBleGFtcGxlLCBlbi1VUyBvciBmci1DQS4gQXMgYSBjb21wYXRpYmlsaXR5IG5vdGUsc29tZSBpbXBsZW1lbnRhdGlvbnMgaGF2ZSB1c2VkIGFuIHVuZGVyc2NvcmUgYXMgdGhlIHNlcGFyYXRvciByYXRoZXIgdGhhbiBhIGRhc2gsIGZvciBleGFtcGxlLCBlbl9VUztSZWx5aW5nIFBhcnRpZXMgTUFZIGNob29zZSB0byBhY2NlcHQgdGhpcyBsb2NhbGUgc3ludGF4IGFzIHdlbGwu
+displayName: Locale
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!5EC6,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: nickname
+gluuAttributeName: nickname
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!5EC6
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/nickname
+description: Casual name of the End-User that may or may not be the same as the given_name.For instance, a nickname value of Mike might be returned alongside a given_name value of Michael.
+displayName: Nickname
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!95FC,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!95FC
+oxMultivaluedAttribute: false
+displayName: objectguid
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:objectguid
+gluuSAML1URI: urn:gluu:dir:attribute-def:objectguid
+gluuAttributeName: objectguid
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Binary attribute for O365. Pulling 'objectGUID' from backend
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!C8D5,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: address
+gluuAttributeEditType: admin
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!C8D5
+description: End-User's preferred postal address. The value of the address member is aJSON [RFC4627] structure containing some or all of the members defined inOpenID Connect 1.0 Core Standard Section 5.1.1
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/address
+displayName: OpenID Connect JSON formatted address
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!C703,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: secretAnswer
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!C703
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:gluu:dir:attribute-def:secretAnswer
+description: Secret Answer
+displayName: Secret Answer
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!8A11,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: secretQuestion
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!8A11
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:gluu:dir:attribute-def:secretQuestion
+description: Secret Question
+displayName: Secret Question
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!B5AD,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!B5AD
+oxMultivaluedAttribute: false
+displayName: testobjectguid
+gluuAttributeType: numeric
+gluuStatus: active
+gluuSAML2URI: urn:oid:testobjectguid
+gluuSAML1URI: urn:gluu:dir:attribute-def:testobjectguid
+gluuAttributeName: testobjectguid
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Test ObjectGUID
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!A901,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: zoneinfo
+gluuAttributeName: zoneinfo
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!A901
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/zoneinfo
+description: String from time zone database representing the End-User's time zone. For example,Europe/Paris or America/Los_Angeles.
+displayName: Time zone info
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!BCA8,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+gluuSAML1URI: urn:mace:shibboleth:1.0:nameIdentifier
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: transientId
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!BCA8
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: mace:shibboleth:1.0:nameIdentifier
+description: TransientId
+displayName: TransientId
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!CACA,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: certificate
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: userCertificate
+gluuAttributeEditType: admin
+gluuAttributeEditType: user
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!CACA
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+oxValidation: {"minLength":null,"maxLength":2048,"regexp":""}
+urn: urn:mace:dir:attribute-def:userCertificate
+description: User certificate
+displayName: User certificate
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!6049,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: role
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!6049
+gluuAttributeViewType: admin
+urn: urn:gluu:dir:attribute-def:role
+description: gluuPermission
+description: User permission or role
+oxMultivaluedAttribute: true
+displayName: User Permission
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!4649,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: boolean
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+gluuAttributeName: gluuStatus
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!4649
+description: User status to allow/disable user access
+urn: urn:gluu:dir:attribute-def:status
+displayName: User Status
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!B174,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+oxSCIMCustomAttribute: false
+gluuAttributeOrigin: gluuCustomPerson
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!B174
+oxMultivaluedAttribute: false
+displayName: username
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:username
+gluuSAML1URI: urn:gluu:dir:attribute-def:username
+gluuAttributeName: username
+gluuAttributeEditType: admin
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: Custom attribute, pulling 'samaccountname'
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!42E0,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: user_name
+gluuAttributeName: uid
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!42E0
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: urn:mace:dir:attribute-def:uid
+description: A domain issued and managed identifier for the person.Subject - Identifier for the End-User at the Issuer.
+displayName: Username
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!FACC,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuSAML2URI: urn:oid:1.3.9999
+gluuSAML1URI: urn:mace:dir:attribute-def:usgCustomEmployeeNumber
+gluuAttributeOrigin: gluuCustomPerson
+gluuAttributeName: usgCustomEmployeeNumber
+gluuAttributeEditType: admin
+gluuAttributeEditType: user
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!FACC
+gluuAttributeViewType: admin
+gluuAttributeViewType: user
+description: USG Custom Employee Number
+oxMultivaluedAttribute: true
+displayName: USG Custom Employee Number
+
+dn: inum=@!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!3B47,ou=attributes,o=@!7492.0C2F.6EF6.6672!0001!0337.7C69,o=gluu
+objectClass: gluuAttribute
+objectClass: top
+gluuAttributeType: string
+gluuStatus: active
+gluuAttributeOrigin: gluuPerson
+oxAuthClaimName: website
+gluuAttributeName: website
+gluuAttributeEditType: user
+gluuAttributeEditType: admin
+inum: @!7492.0C2F.6EF6.6672!0001!0337.7C69!0005!3B47
+gluuAttributeViewType: user
+gluuAttributeViewType: admin
+urn: http://openid.net/specs/openid-connect-core-1_0.html/StandardClaims/website
+description: URL of the End-User's Web page or blog.
+displayName: Website URL
+

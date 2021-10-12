@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" ID="I2fff21f52f1a0ce" entityID="https://apm-demo.bor.usg.edu/sp" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="#I2fff21f52f1a0ce">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>7A4iL/IlgRyXWiiT+ftwDpydIGk=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>BaAQh2r89ORSauvwMudnyHKn4fmQikE6G9P1CNyKyymJHA1LXHgRDXfOzHGeRpmp
+laBx0vyZlbI0z04CzhVT4OaFqX5Lo/9UhqhGHHxLGmE9uIpPHiNICtfMXUYWJ5wk
+9cLgSkEcaF/LLqCU1eeMxW++ypF2LknXPLmUAoaxKUxVsWOEIaUSSSir28rKkr3g
+sGmQYdW5zjuz4rBhAlCKHaBuI+XbLYm6ZJnZiK+sYBLZ3cn7FwuwPga5zANL/ZKe
+o8k3YaHXRta4+bQB7Egol5DEuyQHZG405VCJzbKkTr720pDRh0/F5t7fxuSBdo5M
+0IGNHeaz6Y0SHbSJVfMIzg==</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>MIIEJjCCAw6gAwIBAgIEC8UF/zANBgkqhkiG9w0BAQsFADCB1DELMAkGA1UEBhMC
+VVMxEDAOBgNVBAgTB0dlb3JnaWExDzANBgNVBAcTBkF0aGVuczE9MDsGA1UEChM0
+Qm9hcmQgb2YgUmVnZW50cyBvZiB0aGUgVW5pdmVyc2l0eSBTeXN0ZW0gb2YgR2Vv
+cmdpYTEoMCYGA1UECxMfSW5mb3JtYXRpb24gVGVjaG5vbG9neSBTZXJ2aWNlczEd
+MBsGA1UEAxMUYXBtLWRlbW8uYm9yLnVzZy5lZHUxGjAYBgkqhkiG9w0BCQEWC25v
+Y0B1c2cuZWR1MB4XDTE2MDQwNDE4MjUwM1oXDTIxMDQwMzE4MjUwM1owgdQxCzAJ
+BgNVBAYTAlVTMRAwDgYDVQQIEwdHZW9yZ2lhMQ8wDQYDVQQHEwZBdGhlbnMxPTA7
+BgNVBAoTNEJvYXJkIG9mIFJlZ2VudHMgb2YgdGhlIFVuaXZlcnNpdHkgU3lzdGVt
+IG9mIEdlb3JnaWExKDAmBgNVBAsTH0luZm9ybWF0aW9uIFRlY2hub2xvZ3kgU2Vy
+dmljZXMxHTAbBgNVBAMTFGFwbS1kZW1vLmJvci51c2cuZWR1MRowGAYJKoZIhvcN
+AQkBFgtub2NAdXNnLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB
+AOT7XGpW6fxmSqx06fvotaTNZN1jRdxyhlAxPJW53CFd+fDQNZWi/nwiAfqyxjpa
+4MIoWNSuVHV+9Xc4zAslR8xlJMcKKKchPLUWT3nmXRtKVGaSWhROCHSEVvhxj00I
+X+gvo2ohFfVEDC2SfrQ8wCeAFcG2kgHk8c4mmgf2qcmAZZ1vBspBut59csRYgyH1
+obxPYrxMmyve7fiR1DKTRP/SDZOzka2X5FGX2dH21Ql29QR8dr7cIgPE7RsiOvqs
+WiC8VA7BNgfhJrExNWPF4ueYwrQL+4kPcoqH6cz/yK0njq13pg19J/XX/0r9N7j8
+rGtt02/JcJCqLuzyTniZdA0CAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAjZyi+E1X
+ImTZeosB8NWOIf+gxZNsKKS/0q51slym3k6t4z8eG1WPV6CsJvhhLfuOBnsyuW0n
+MBkn5oCb3ymX6FLUmdG6ejluKRIiIy4mLW6Bsu9cvGE1R+WvYDurRRxVuJjxZDE5
+u/j774cHgRLuiFIpuYYnehbziHPOsSotsoFEge+MT2yl/KpFoOwfzH0J2fY8W/uE
+3pLzuDQaoOkniA7krP5URD2Eoqj2GJzNdc6QKddhS1kSHinI/pdoSlyVIIa28OVg
+ho4OhPDUBuMJWnji5XLfFBB2LxYdr0zPCQJb4s+pi1HoHQbITZR93Gu3UH+RMa64
+mUMqCMf9vK7Ucw==
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature>
+	<SPSSODescriptor WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://apm-demo.bor.usg.edu/saml/sp/profile/post/sls" ResponseLocation="https://apm-demo.bor.usg.edu/saml/sp/profile/post/slr">
+		</SingleLogoutService>
+		<NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+		<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://apm-demo.bor.usg.edu/saml/sp/profile/post/acs" index="0" isDefault="true">
+		</AssertionConsumerService>
+	</SPSSODescriptor>
+</EntityDescriptor>

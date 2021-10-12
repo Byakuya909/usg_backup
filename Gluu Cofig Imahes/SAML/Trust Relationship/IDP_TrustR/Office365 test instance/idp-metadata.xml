@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                  xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+                  entityID="https://idp-dev.usg.edu/idp/shibboleth">
+
+    <IDPSSODescriptor errorURL="https://idp-dev.usg.edu/identity/feedback.htm" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">idp-dev.usg.edu</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIG5jCCBc6gAwIBAgIRANW3PpUqiFkBQ2VleSZ0SUswDQYJKoZIhvcNAQELBQAw
+djELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1JMRIwEAYDVQQHEwlBbm4gQXJib3Ix
+EjAQBgNVBAoTCUludGVybmV0MjERMA8GA1UECxMISW5Db21tb24xHzAdBgNVBAMT
+FkluQ29tbW9uIFJTQSBTZXJ2ZXIgQ0EwHhcNMjEwNjA3MDAwMDAwWhcNMjIwNjA3
+MjM1OTU5WjCBnDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0dlb3JnaWExEDAOBgNV
+BAcTB0F0bGFudGExJTAjBgNVBAoTHFVuaXZlcnNpdHkgU3lzdGVtIG9mIEdlb3Jn
+aWExKDAmBgNVBAsTH0luZm9ybWF0aW9uIFRlY2hub2xvZ3kgU2VydmljZXMxGDAW
+BgNVBAMTD2lkcC1kZXYudXNnLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAKnfpVMItMXW0FhqzsFkacH1jFjl2OGFJMBDrxI6WC6O/qgNR2/M6tub
+WhxbZejmJuaqblTssIvd97AirjXBT6CeLeS4rYncV5o7WkZls4+B81xK22RBtcYx
++GxWkx87ydNRYOTQr4b9L4+9evrj6RtM3RgUnMpbwHovqd5S+0p8IJ66FJ4tP7yA
+GD2EPUvZzxrnA06ma6wXj7cgb221LfCNfnmxcWhGCb9+aSz91J38FaM71Nt/iZ86
+TRURdv0xH/IjDctG7nz1R2FcmKwKg2gV5w18f1AUnSXm75sS7nKJPkqHctBTc5L+
+keZjDc79bP9xK0/Tgy3wkRniQ5p7TzUCAwEAAaOCA0YwggNCMB8GA1UdIwQYMBaA
+FB4Fo3ePbJbiW4dLprSGrHEADOc4MB0GA1UdDgQWBBSf+2FQmcGe1N+OcqmHD91n
+hXzmHDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggr
+BgEFBQcDAQYIKwYBBQUHAwIwZwYDVR0gBGAwXjBSBgwrBgEEAa4jAQQDAQEwQjBA
+BggrBgEFBQcCARY0aHR0cHM6Ly93d3cuaW5jb21tb24ub3JnL2NlcnQvcmVwb3Np
+dG9yeS9jcHNfc3NsLnBkZjAIBgZngQwBAgIwRAYDVR0fBD0wOzA5oDegNYYzaHR0
+cDovL2NybC5pbmNvbW1vbi1yc2Eub3JnL0luQ29tbW9uUlNBU2VydmVyQ0EuY3Js
+MHUGCCsGAQUFBwEBBGkwZzA+BggrBgEFBQcwAoYyaHR0cDovL2NydC51c2VydHJ1
+c3QuY29tL0luQ29tbW9uUlNBU2VydmVyQ0FfMi5jcnQwJQYIKwYBBQUHMAGGGWh0
+dHA6Ly9vY3NwLnVzZXJ0cnVzdC5jb20wGgYDVR0RBBMwEYIPaWRwLWRldi51c2cu
+ZWR1MIIBfwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdgBGpVXrdfqRIDC1oolp9PN9
+ESxBdL79SbiFq/L8cP5tRwAAAXnnh4nLAAAEAwBHMEUCIFE6gyHG3WJtHRF8cFkt
+1Mo9cpPMEAtgV90Wh04CE8FKAiEAqn2kY3sDciW1FeezGbJ7AAWKNY1iGCzvo6fv
+5LsEHvYAdgBByMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAXnnh4mI
+AAAEAwBHMEUCIQDIwJJeIPxfNGhJU/m23CX8/ju75K8gP0+RbUUmBJA2XwIgAqWG
+ZOIX3r3P+U7iWYlWvLWvlZGLyQip4wPG9+ydy/4AdwApeb7wnjk5IfBWc59jpXfl
+vld9nGAK+PlNXSZcJV3HhAAAAXnnh4ljAAAEAwBIMEYCIQC21Dm8RxqvrrjbZXyS
+1ajNTD50g6RhvQe3aGLETqQhbwIhAJG74QG5H6JTk1Q2DwZY6qqGydecOhF/G1Bb
+CMBnD40cMA0GCSqGSIb3DQEBCwUAA4IBAQBrVE1lyJqCQOqbmAmNIGUr8aQdMeAU
+rP7DQvrho8QpOnJK2qgGBBr9mAitZmOK1OuuDgW3OYJfYpV50tEoOxyebHHNE51J
+mMijtuZ76kMNebX+YezlKRQzDdhv6kPTMeU0iEtGGvsEsh5nCODMKNbsqy4frm1v
+xOqBhQDyI5YxtdBHX6hiIXgI6Cf3P2SKGSK8nqUvYjkTbDJ1oCNH2TJyVYxaQDCv
+jJd6qRBJR8vAzc+rmG39K8xGDT69xpKALS04oo29m3a5sxaqwt+5p8oFpZaUXc0k
+dCaPYrbAYfz3NdG4BZCUm7RNq5cflVtTnJFPrdWgGBgd4tQmaymiZkrk
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <KeyDescriptor use="encryption">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIG5jCCBc6gAwIBAgIRANW3PpUqiFkBQ2VleSZ0SUswDQYJKoZIhvcNAQELBQAw
+djELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1JMRIwEAYDVQQHEwlBbm4gQXJib3Ix
+EjAQBgNVBAoTCUludGVybmV0MjERMA8GA1UECxMISW5Db21tb24xHzAdBgNVBAMT
+FkluQ29tbW9uIFJTQSBTZXJ2ZXIgQ0EwHhcNMjEwNjA3MDAwMDAwWhcNMjIwNjA3
+MjM1OTU5WjCBnDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0dlb3JnaWExEDAOBgNV
+BAcTB0F0bGFudGExJTAjBgNVBAoTHFVuaXZlcnNpdHkgU3lzdGVtIG9mIEdlb3Jn
+aWExKDAmBgNVBAsTH0luZm9ybWF0aW9uIFRlY2hub2xvZ3kgU2VydmljZXMxGDAW
+BgNVBAMTD2lkcC1kZXYudXNnLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAKnfpVMItMXW0FhqzsFkacH1jFjl2OGFJMBDrxI6WC6O/qgNR2/M6tub
+WhxbZejmJuaqblTssIvd97AirjXBT6CeLeS4rYncV5o7WkZls4+B81xK22RBtcYx
++GxWkx87ydNRYOTQr4b9L4+9evrj6RtM3RgUnMpbwHovqd5S+0p8IJ66FJ4tP7yA
+GD2EPUvZzxrnA06ma6wXj7cgb221LfCNfnmxcWhGCb9+aSz91J38FaM71Nt/iZ86
+TRURdv0xH/IjDctG7nz1R2FcmKwKg2gV5w18f1AUnSXm75sS7nKJPkqHctBTc5L+
+keZjDc79bP9xK0/Tgy3wkRniQ5p7TzUCAwEAAaOCA0YwggNCMB8GA1UdIwQYMBaA
+FB4Fo3ePbJbiW4dLprSGrHEADOc4MB0GA1UdDgQWBBSf+2FQmcGe1N+OcqmHD91n
+hXzmHDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggr
+BgEFBQcDAQYIKwYBBQUHAwIwZwYDVR0gBGAwXjBSBgwrBgEEAa4jAQQDAQEwQjBA
+BggrBgEFBQcCARY0aHR0cHM6Ly93d3cuaW5jb21tb24ub3JnL2NlcnQvcmVwb3Np
+dG9yeS9jcHNfc3NsLnBkZjAIBgZngQwBAgIwRAYDVR0fBD0wOzA5oDegNYYzaHR0
+cDovL2NybC5pbmNvbW1vbi1yc2Eub3JnL0luQ29tbW9uUlNBU2VydmVyQ0EuY3Js
+MHUGCCsGAQUFBwEBBGkwZzA+BggrBgEFBQcwAoYyaHR0cDovL2NydC51c2VydHJ1
+c3QuY29tL0luQ29tbW9uUlNBU2VydmVyQ0FfMi5jcnQwJQYIKwYBBQUHMAGGGWh0
+dHA6Ly9vY3NwLnVzZXJ0cnVzdC5jb20wGgYDVR0RBBMwEYIPaWRwLWRldi51c2cu
+ZWR1MIIBfwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdgBGpVXrdfqRIDC1oolp9PN9
+ESxBdL79SbiFq/L8cP5tRwAAAXnnh4nLAAAEAwBHMEUCIFE6gyHG3WJtHRF8cFkt
+1Mo9cpPMEAtgV90Wh04CE8FKAiEAqn2kY3sDciW1FeezGbJ7AAWKNY1iGCzvo6fv
+5LsEHvYAdgBByMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAXnnh4mI
+AAAEAwBHMEUCIQDIwJJeIPxfNGhJU/m23CX8/ju75K8gP0+RbUUmBJA2XwIgAqWG
+ZOIX3r3P+U7iWYlWvLWvlZGLyQip4wPG9+ydy/4AdwApeb7wnjk5IfBWc59jpXfl
+vld9nGAK+PlNXSZcJV3HhAAAAXnnh4ljAAAEAwBIMEYCIQC21Dm8RxqvrrjbZXyS
+1ajNTD50g6RhvQe3aGLETqQhbwIhAJG74QG5H6JTk1Q2DwZY6qqGydecOhF/G1Bb
+CMBnD40cMA0GCSqGSIb3DQEBCwUAA4IBAQBrVE1lyJqCQOqbmAmNIGUr8aQdMeAU
+rP7DQvrho8QpOnJK2qgGBBr9mAitZmOK1OuuDgW3OYJfYpV50tEoOxyebHHNE51J
+mMijtuZ76kMNebX+YezlKRQzDdhv6kPTMeU0iEtGGvsEsh5nCODMKNbsqy4frm1v
+xOqBhQDyI5YxtdBHX6hiIXgI6Cf3P2SKGSK8nqUvYjkTbDJ1oCNH2TJyVYxaQDCv
+jJd6qRBJR8vAzc+rmG39K8xGDT69xpKALS04oo29m3a5sxaqwt+5p8oFpZaUXc0k
+dCaPYrbAYfz3NdG4BZCUm7RNq5cflVtTnJFPrdWgGBgd4tQmaymiZkrk
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                                   Location="https://idp-dev.usg.edu/idp/profile/SAML2/SOAP/ArtifactResolution"
+                                   index="1"/>
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp-dev.usg.edu/idp/profile/SAML2/Redirect/SLO"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp-dev.usg.edu/idp/profile/SAML2/POST/SLO"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp-dev.usg.edu/idp/profile/SAML2/POST-SimpleSign/SLO"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp-dev.usg.edu/idp/profile/SAML2/SOAP/SLO"/>
+        
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        
+        <SingleSignOnService Binding="urn:mace:shibboleth:2.0:profiles:AuthnRequest" Location="https://idp-dev.usg.edu/idp/profile/SAML2/Unsolicited/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp-dev.usg.edu/idp/profile/SAML2/POST/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp-dev.usg.edu/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp-dev.usg.edu/idp/profile/SAML2/Redirect/SSO"/>
+
+    </IDPSSODescriptor>
+    
+    
+    <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">idp-dev.usg.edu</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIG5jCCBc6gAwIBAgIRANW3PpUqiFkBQ2VleSZ0SUswDQYJKoZIhvcNAQELBQAw
+djELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1JMRIwEAYDVQQHEwlBbm4gQXJib3Ix
+EjAQBgNVBAoTCUludGVybmV0MjERMA8GA1UECxMISW5Db21tb24xHzAdBgNVBAMT
+FkluQ29tbW9uIFJTQSBTZXJ2ZXIgQ0EwHhcNMjEwNjA3MDAwMDAwWhcNMjIwNjA3
+MjM1OTU5WjCBnDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0dlb3JnaWExEDAOBgNV
+BAcTB0F0bGFudGExJTAjBgNVBAoTHFVuaXZlcnNpdHkgU3lzdGVtIG9mIEdlb3Jn
+aWExKDAmBgNVBAsTH0luZm9ybWF0aW9uIFRlY2hub2xvZ3kgU2VydmljZXMxGDAW
+BgNVBAMTD2lkcC1kZXYudXNnLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAKnfpVMItMXW0FhqzsFkacH1jFjl2OGFJMBDrxI6WC6O/qgNR2/M6tub
+WhxbZejmJuaqblTssIvd97AirjXBT6CeLeS4rYncV5o7WkZls4+B81xK22RBtcYx
++GxWkx87ydNRYOTQr4b9L4+9evrj6RtM3RgUnMpbwHovqd5S+0p8IJ66FJ4tP7yA
+GD2EPUvZzxrnA06ma6wXj7cgb221LfCNfnmxcWhGCb9+aSz91J38FaM71Nt/iZ86
+TRURdv0xH/IjDctG7nz1R2FcmKwKg2gV5w18f1AUnSXm75sS7nKJPkqHctBTc5L+
+keZjDc79bP9xK0/Tgy3wkRniQ5p7TzUCAwEAAaOCA0YwggNCMB8GA1UdIwQYMBaA
+FB4Fo3ePbJbiW4dLprSGrHEADOc4MB0GA1UdDgQWBBSf+2FQmcGe1N+OcqmHD91n
+hXzmHDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggr
+BgEFBQcDAQYIKwYBBQUHAwIwZwYDVR0gBGAwXjBSBgwrBgEEAa4jAQQDAQEwQjBA
+BggrBgEFBQcCARY0aHR0cHM6Ly93d3cuaW5jb21tb24ub3JnL2NlcnQvcmVwb3Np
+dG9yeS9jcHNfc3NsLnBkZjAIBgZngQwBAgIwRAYDVR0fBD0wOzA5oDegNYYzaHR0
+cDovL2NybC5pbmNvbW1vbi1yc2Eub3JnL0luQ29tbW9uUlNBU2VydmVyQ0EuY3Js
+MHUGCCsGAQUFBwEBBGkwZzA+BggrBgEFBQcwAoYyaHR0cDovL2NydC51c2VydHJ1
+c3QuY29tL0luQ29tbW9uUlNBU2VydmVyQ0FfMi5jcnQwJQYIKwYBBQUHMAGGGWh0
+dHA6Ly9vY3NwLnVzZXJ0cnVzdC5jb20wGgYDVR0RBBMwEYIPaWRwLWRldi51c2cu
+ZWR1MIIBfwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdgBGpVXrdfqRIDC1oolp9PN9
+ESxBdL79SbiFq/L8cP5tRwAAAXnnh4nLAAAEAwBHMEUCIFE6gyHG3WJtHRF8cFkt
+1Mo9cpPMEAtgV90Wh04CE8FKAiEAqn2kY3sDciW1FeezGbJ7AAWKNY1iGCzvo6fv
+5LsEHvYAdgBByMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAXnnh4mI
+AAAEAwBHMEUCIQDIwJJeIPxfNGhJU/m23CX8/ju75K8gP0+RbUUmBJA2XwIgAqWG
+ZOIX3r3P+U7iWYlWvLWvlZGLyQip4wPG9+ydy/4AdwApeb7wnjk5IfBWc59jpXfl
+vld9nGAK+PlNXSZcJV3HhAAAAXnnh4ljAAAEAwBIMEYCIQC21Dm8RxqvrrjbZXyS
+1ajNTD50g6RhvQe3aGLETqQhbwIhAJG74QG5H6JTk1Q2DwZY6qqGydecOhF/G1Bb
+CMBnD40cMA0GCSqGSIb3DQEBCwUAA4IBAQBrVE1lyJqCQOqbmAmNIGUr8aQdMeAU
+rP7DQvrho8QpOnJK2qgGBBr9mAitZmOK1OuuDgW3OYJfYpV50tEoOxyebHHNE51J
+mMijtuZ76kMNebX+YezlKRQzDdhv6kPTMeU0iEtGGvsEsh5nCODMKNbsqy4frm1v
+xOqBhQDyI5YxtdBHX6hiIXgI6Cf3P2SKGSK8nqUvYjkTbDJ1oCNH2TJyVYxaQDCv
+jJd6qRBJR8vAzc+rmG39K8xGDT69xpKALS04oo29m3a5sxaqwt+5p8oFpZaUXc0k
+dCaPYrbAYfz3NdG4BZCUm7RNq5cflVtTnJFPrdWgGBgd4tQmaymiZkrk
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <KeyDescriptor use="encryption">
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIG5jCCBc6gAwIBAgIRANW3PpUqiFkBQ2VleSZ0SUswDQYJKoZIhvcNAQELBQAw
+djELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAk1JMRIwEAYDVQQHEwlBbm4gQXJib3Ix
+EjAQBgNVBAoTCUludGVybmV0MjERMA8GA1UECxMISW5Db21tb24xHzAdBgNVBAMT
+FkluQ29tbW9uIFJTQSBTZXJ2ZXIgQ0EwHhcNMjEwNjA3MDAwMDAwWhcNMjIwNjA3
+MjM1OTU5WjCBnDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0dlb3JnaWExEDAOBgNV
+BAcTB0F0bGFudGExJTAjBgNVBAoTHFVuaXZlcnNpdHkgU3lzdGVtIG9mIEdlb3Jn
+aWExKDAmBgNVBAsTH0luZm9ybWF0aW9uIFRlY2hub2xvZ3kgU2VydmljZXMxGDAW
+BgNVBAMTD2lkcC1kZXYudXNnLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCC
+AQoCggEBAKnfpVMItMXW0FhqzsFkacH1jFjl2OGFJMBDrxI6WC6O/qgNR2/M6tub
+WhxbZejmJuaqblTssIvd97AirjXBT6CeLeS4rYncV5o7WkZls4+B81xK22RBtcYx
++GxWkx87ydNRYOTQr4b9L4+9evrj6RtM3RgUnMpbwHovqd5S+0p8IJ66FJ4tP7yA
+GD2EPUvZzxrnA06ma6wXj7cgb221LfCNfnmxcWhGCb9+aSz91J38FaM71Nt/iZ86
+TRURdv0xH/IjDctG7nz1R2FcmKwKg2gV5w18f1AUnSXm75sS7nKJPkqHctBTc5L+
+keZjDc79bP9xK0/Tgy3wkRniQ5p7TzUCAwEAAaOCA0YwggNCMB8GA1UdIwQYMBaA
+FB4Fo3ePbJbiW4dLprSGrHEADOc4MB0GA1UdDgQWBBSf+2FQmcGe1N+OcqmHD91n
+hXzmHDAOBgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggr
+BgEFBQcDAQYIKwYBBQUHAwIwZwYDVR0gBGAwXjBSBgwrBgEEAa4jAQQDAQEwQjBA
+BggrBgEFBQcCARY0aHR0cHM6Ly93d3cuaW5jb21tb24ub3JnL2NlcnQvcmVwb3Np
+dG9yeS9jcHNfc3NsLnBkZjAIBgZngQwBAgIwRAYDVR0fBD0wOzA5oDegNYYzaHR0
+cDovL2NybC5pbmNvbW1vbi1yc2Eub3JnL0luQ29tbW9uUlNBU2VydmVyQ0EuY3Js
+MHUGCCsGAQUFBwEBBGkwZzA+BggrBgEFBQcwAoYyaHR0cDovL2NydC51c2VydHJ1
+c3QuY29tL0luQ29tbW9uUlNBU2VydmVyQ0FfMi5jcnQwJQYIKwYBBQUHMAGGGWh0
+dHA6Ly9vY3NwLnVzZXJ0cnVzdC5jb20wGgYDVR0RBBMwEYIPaWRwLWRldi51c2cu
+ZWR1MIIBfwYKKwYBBAHWeQIEAgSCAW8EggFrAWkAdgBGpVXrdfqRIDC1oolp9PN9
+ESxBdL79SbiFq/L8cP5tRwAAAXnnh4nLAAAEAwBHMEUCIFE6gyHG3WJtHRF8cFkt
+1Mo9cpPMEAtgV90Wh04CE8FKAiEAqn2kY3sDciW1FeezGbJ7AAWKNY1iGCzvo6fv
+5LsEHvYAdgBByMqx3yJGShDGoToJQodeTjGLGwPr60vHaPCQYpYG9gAAAXnnh4mI
+AAAEAwBHMEUCIQDIwJJeIPxfNGhJU/m23CX8/ju75K8gP0+RbUUmBJA2XwIgAqWG
+ZOIX3r3P+U7iWYlWvLWvlZGLyQip4wPG9+ydy/4AdwApeb7wnjk5IfBWc59jpXfl
+vld9nGAK+PlNXSZcJV3HhAAAAXnnh4ljAAAEAwBIMEYCIQC21Dm8RxqvrrjbZXyS
+1ajNTD50g6RhvQe3aGLETqQhbwIhAJG74QG5H6JTk1Q2DwZY6qqGydecOhF/G1Bb
+CMBnD40cMA0GCSqGSIb3DQEBCwUAA4IBAQBrVE1lyJqCQOqbmAmNIGUr8aQdMeAU
+rP7DQvrho8QpOnJK2qgGBBr9mAitZmOK1OuuDgW3OYJfYpV50tEoOxyebHHNE51J
+mMijtuZ76kMNebX+YezlKRQzDdhv6kPTMeU0iEtGGvsEsh5nCODMKNbsqy4frm1v
+xOqBhQDyI5YxtdBHX6hiIXgI6Cf3P2SKGSK8nqUvYjkTbDJ1oCNH2TJyVYxaQDCv
+jJd6qRBJR8vAzc+rmG39K8xGDT69xpKALS04oo29m3a5sxaqwt+5p8oFpZaUXc0k
+dCaPYrbAYfz3NdG4BZCUm7RNq5cflVtTnJFPrdWgGBgd4tQmaymiZkrk
+
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding"
+                          Location="https://idp-dev.usg.edu/idp/profile/SAML1/SOAP/AttributeQuery"/>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+                          Location="https://idp-dev.usg.edu/idp/profile/SAML2/SOAP/AttributeQuery"/>
+
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+
+    </AttributeAuthorityDescriptor>
+
+    <Organization>
+        <OrganizationName xml:lang="en">Gluu Inc.</OrganizationName>
+        <OrganizationDisplayName xml:lang="en">Gluu Inc.</OrganizationDisplayName>
+        <OrganizationURL xml:lang="en">https://idp-dev.usg.edu</OrganizationURL>
+    </Organization>
+
+</EntityDescriptor>

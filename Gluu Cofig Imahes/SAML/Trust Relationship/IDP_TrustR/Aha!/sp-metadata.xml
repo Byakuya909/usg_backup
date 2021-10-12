@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<md:EntityDescriptor ID='_ac32a30c-5494-4758-b660-eefe310915a6'
+entityID='https://borusg.aha.io/'
+xmlns:md='urn:oasis:names:tc:SAML:2.0:metadata'>
+  <md:SPSSODescriptor AuthnRequestsSigned='false'
+  WantAssertionsSigned='false'
+  protocolSupportEnumeration='urn:oasis:names:tc:SAML:2.0:protocol'>
+
+    <md:NameIDFormat>
+    urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+    <md:AssertionConsumerService Binding='urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST'
+    Location='https://borusg.aha.io/auth/saml/callback' index='0'
+    isDefault='true' />
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>

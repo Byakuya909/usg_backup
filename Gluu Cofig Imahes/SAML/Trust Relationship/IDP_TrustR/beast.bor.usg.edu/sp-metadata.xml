@@ -1,0 +1,22 @@
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="DA855F9895A1CA3B0002E42B2E200006F4D2313A">
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <md:Extensions>
+      <DiscoveryResponse xmlns="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://beast.bor.usg.edu/Shibboleth.sso/DS" index="1"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>
+MIIC+jCCAeKgAwIBAgIJAOkvVLZVrV4sMA0GCSqGSIb3DQEBBQUAMBwxGjAYBgNVBAMTEWJlYXN0LmJvci51c2cuZWR1MB4XDTE0MTIwMzE0NTk1N1oXDTI0MTEzMDE0NTk1N1owHDEaMBgGA1UEAxMRYmVhc3QuYm9yLnVzZy5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDzUVNtwBfONr5nGtW7AEZ0rnpWjigvNxXb71PEu4qHkJ0r/dwnPmF1v1Vd2yCqDQhD5cQLUVoxLzPsNzi2V+mXVemP/RvnEMtO9OaaSTCFSmK8pZ1yxEuwBIFiOdFYhBNMxzMbXA56rqJDidsVqG/AGxK07zPkgFybnk9Ikgak31++2f9mpiJz3VS+pwDMWFqupkv0KipQZdtM94GfvLsLIKub5edUpugzVdvGgkKo09rcwAsM3PPHKtEJDiI+hUkqDg+6AoxtboURh53cy3nvUkBBQjwTrftlyi+0153EpuEDcGdPLSCasxYLOWis8EonOoxIlJpgtRrac6GcQtV5AgMBAAGjPzA9MBwGA1UdEQQVMBOCEWJlYXN0LmJvci51c2cuZWR1MB0GA1UdDgQWBBRV8eYPEhmU8183FsjL7+KmLkSSIjANBgkqhkiG9w0BAQUFAAOCAQEAwYo7qt63Y24zw/eK/zEHqow1/Kt5WLmFBbQVkfWbYal8tssOCT65pzi4OpsoiaPC6JaigScDy0A+qTjsG/D9Lg6Myn/l8akEREnCiPQqJdvobRLDkors2fxLe1TnKcoycRfl0TXtgCGfZzDFFaDFVo8HoNZZo8zm3CLUM7uhDE9SQwKYtn5Y02IpPL/tFnO1JmD9SD1dQquGiqO0DtMpLu/A1X51faxXnVWD24UocYZc9inTAZziJNyudyG9ZQRBH7tqgjvAUbtVc5SHkr6yBU2q2Q3JIO+ch9BrVvOSlHFIOdoiYUKMVWnXl2u4Lmy1M63MDgUzb0TNI9JkOak2zw==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://beast.bor.usg.edu/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://beast.bor.usg.edu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://beast.bor.usg.edu/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://beast.bor.usg.edu/Shibboleth.sso/SAML2/ECP" index="4"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="https://beast.bor.usg.edu/Shibboleth.sso/SAML/POST" index="5"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://beast.bor.usg.edu/Shibboleth.sso/SAML/Artifact" index="6"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>
